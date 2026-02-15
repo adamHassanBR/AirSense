@@ -10,11 +10,13 @@ Le projet combine un **ESP8266 (ESPHome)**, un DHT22 et un **boîtier imprimé e
 
 ---
 
+![Front] (image.jpeg)
+
 ## 📸 Aperçu
 
 | Vue avant                                  | Vue arrière                               | Vue angle                                  | Vue interne                           |
 | ------------------------------------------ | ----------------------------------------- | ------------------------------------------ | ------------------------------------- |
-| ![Front](docs/images/assembled_front.jpeg) | ![Back](image.png) | ![Angle](docs/images/assembled_angle.jpeg) | ![Inside](docs/images/internals.jpeg) |
+| ![Front](docs/images/assembled_front.jpeg) | ![Back](docs/images/assembled_front.jpeg) | ![Angle](docs/images/assembled_angle.jpeg) | ![Inside](docs/images/internals.jpeg) |
 
 ---
 
