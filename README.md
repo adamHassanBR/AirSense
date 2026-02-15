@@ -10,7 +10,7 @@ Le projet combine un **ESP8266 (ESPHome)**, un DHT22 et un **boîtier imprimé e
 
 ---
 
-![Front] (image.jpeg)
+![Front](image.png)
 
 ## 📸 Aperçu
 
