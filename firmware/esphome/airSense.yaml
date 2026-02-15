@@ -1,0 +1,52 @@
+substitutions:
+  name: capteur-temperature-humidite
+  friendly_name: "Capteur Température & Humidité"
+  dht_pin: GPIO2
+  dht_model: DHT22
+
+esphome:
+  name: ${name}
+  friendly_name: ${friendly_name}
+  name_add_mac_suffix: false
+
+esp8266:
+  board: esp01_1m
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "api_key"
+
+ota:
+  - platform: esphome
+    password: "ota_password"
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Capteur-Temperature--Humidite"
+    password: "ap_password"
+
+captive_portal:
+
+web_server:
+
+sensor:
+  - platform: dht
+    pin: ${dht_pin}
+    model: ${dht_model}
+    temperature:
+      name: "Température"
+      filters:
+        - offset: 0.0
+    humidity:
+      name: "Humidité"
+      filters:
+        - offset: 0.0
+    update_interval: 10s
